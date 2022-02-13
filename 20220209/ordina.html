@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Corso JavaScript</title>
+    <script>
+        function travasa() {
+            let v = document.querySelector("#input").value
+            let p = v.split(/ |;|:|(0-9)*|\./)
+            p.sort()
+            let esito = []
+            for(let k of p) {
+                if (k != '') {
+                esito.push(k)
+                }
+            }
+            document.querySelector("#output").value = esito.sort().toString()
+        }
+    </script>
+</head>
+<body>
+    <h1>Ordina</h1>
+    <textarea name="contaparole" id="input" cols="60" rows="8"></textarea>
+    <button onclick="travasa()">Elabora</button>
+    <textarea name="travasa" id="output" cols="60" rows="8"></textarea>
+</body>
+</html>
