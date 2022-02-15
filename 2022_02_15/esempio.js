@@ -23,13 +23,13 @@
 }
 
 function createTable() {
-    body = document.body;
     let table = document.createElement("table"); // tabella creata e allocata in memoria
     let tbody = document.createElement("tbody");
     let trow = document.createElement("trow");
-    body.appendChild(table);
+    let td = document.createElement("td");
     table.appendChild(tbody);
     tbody.appendChild(trow);
+    trow.appendChild(td);
 
     document.getElementsByTagName("body")[0].appendChild(table); // [0] -> prendi il primo elemento dell indice col il tag body
 }
