@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio tabella</title>
+    <style>
+        table {
+            border: 2px solid black;
+        }
+        tr, td {
+            border: 1px solid blue;
+        }
+        table tr:nth-child(odd) {
+            background-color: grey;
+        }
+    </style>
+    <script>
+        function createTable() {
+            let b = document.getElementsByTagName('body')[0] // [0] -> prendi il primo elemento dell indice col il tag body
+            table = document.createElement("table") // tabella creata e allocata in memoria
+            let tbody = table.createTBody()
+            let trow = tbody.insertRow()
+            let cell = trow.insertCell()
+            cell.innerHTML = "Ciao"
+            trow = tbody.insertRow()
+            cell = trow.insertCell()
+            cell.innerHTML = "a tutti"
+            b.appendChild(table)
+        }
+    </script>
+</head>
+
+<body onload="createTable()">
+
+</body>
+
+</html>
