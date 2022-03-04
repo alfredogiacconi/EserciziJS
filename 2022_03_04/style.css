@@ -1,0 +1,10 @@
+.cliccato {
+    background-color: rgb(8, 241, 8);
+}
+.non_cliccato{
+    color: red;
+}
+.evidenzia {
+    font-size: larger;
+    background-color: yellow;
+}
